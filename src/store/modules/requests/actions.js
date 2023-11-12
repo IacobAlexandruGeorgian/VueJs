@@ -4,6 +4,7 @@ export default {
             userEmail: payload.email,
             message: payload.message
         };
+
         const response = await fetch(`https://find-a-coach-32c42-default-rtdb.europe-west1.firebasedatabase.app/${payload.coachId}.json`, {
             method: 'POST',
             body: JSON.stringify(newRequest)
@@ -24,7 +25,8 @@ export default {
 
     async fetchRequests(context) {
         const coachId = context.rootGetters.userId;
-        const response = await fetch(`https://find-a-coach-32c42-default-rtdb.europe-west1.firebasedatabase.app/${coachId}.json`);
+        const token = context.rootGetters.token;
+        const response = await fetch(`https://find-a-coach-32c42-default-rtdb.europe-west1.firebasedatabase.app/${coachId}.json?auth=` + token);
         const responseData = await response.json();
 
         if (!response.ok) {

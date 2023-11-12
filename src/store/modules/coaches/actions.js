@@ -9,7 +9,9 @@ export default {
             areas: data.areas
         };
 
-        const response = await fetch(`https://console.firebase.google.com/project/find-a-coach-32c42/database/find-a-coach-32c42-default-rtdb/data/~2F/coaches/${userId}.json`, {
+        const token = context.getters.token;
+
+        const response = await fetch(`https://console.firebase.google.com/project/find-a-coach-32c42/database/find-a-coach-32c42-default-rtdb/data/~2F/coaches/${userId}.json?auth=` + token, {
             method: 'PUT',
             body: JSON.stringify(coachData)
         });
