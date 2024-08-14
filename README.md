@@ -1,5 +1,7 @@
 # Find-Coach-VueJs
 
+![image](https://github.com/user-attachments/assets/507d3a88-0d65-4f2b-b7fd-dd0a10089a7b)
+
 ![image](https://github.com/IacobAlexandruGeorgian/Find-Coach-VueJs/assets/84518155/43ff0c6e-4be8-4b74-91fd-00cbdb9e49e3)
 
 ![image](https://github.com/IacobAlexandruGeorgian/Find-Coach-VueJs/assets/84518155/900796b3-324c-4209-a89d-f91b9e6069e5)
